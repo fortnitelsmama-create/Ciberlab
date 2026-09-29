@@ -7,13 +7,8 @@
 <body>
     <h1>CyberLab 🛡️</h1>
     <p>Bienvenue sur mon premier site !</p>
-<p>👥 Visiteurs : <span id="visiteurs">0</span></p>
+<p>👥 Visiteurs : <span class="counterapi">Chargement...</span></p>
 
-<script>
-let visites = localStorage.getItem("visites") || 0;
-visites++;
-localStorage.setItem("visites", visites);
-document.getElementById("visiteurs").textContent = visites;
-</script>
+<script src="https://counterapi.com/c.js?ns=cyberlab-tonpseudo-2026" async></script>
 </body>
 </html>
